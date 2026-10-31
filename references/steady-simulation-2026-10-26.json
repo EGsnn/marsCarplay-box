@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "firmware": "0.1.4-atk-steady",
+  "scope": "Actual S3 encrypted simulated sender with offline High/CABAC sample. NOT real iPhone performance.",
+  "sent_frames": 100,
+  "sent_configs": 10,
+  "actual_send_fps": 9.99860748577661,
+  "send_seconds": 10.001392708159983,
+  "drain_seconds": 3,
+  "counts_delta": {
+    "decoded": 100,
+    "shown": 100,
+    "gaps": 0,
+    "errors": 0,
+    "decoder_resets": 1,
+    "skipped_waiting_idr": 0,
+    "received": 100
+  },
+  "final_queue": {
+    "ready": true,
+    "epoch": 2,
+    "sequence": 100,
+    "frames": 100,
+    "queued": 32,
+    "bytes": 2801,
+    "evicted": 68,
+    "oversize": 0,
+    "max_payload": 196608,
+    "config_changes": 1,
+    "config_duplicates": 9,
+    "config_clears": 1
+  },
+  "epoch_stable_during_send": true,
+  "interval_wall_time_avg_ms_approx": {
+    "decode": 45.14,
+    "process": 81.09,
+    "convert": 19.77,
+    "present": 16.08
+  },
+  "previous_same_sample_convert_ms": 21.68,
+  "note": "Timing approximated from rounded cumulative averages and attempt counts; includes scheduler/yields, excludes display callback from decode. Single synthetic comparison is not a real-iPhone speedup claim."
+}

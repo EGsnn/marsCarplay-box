@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+set(PROJECT_VER "0.1.8-public-source")
+get_filename_component(ATK_PROJECT_ROOT "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
+set(EXTRA_COMPONENT_DIRS "${ATK_PROJECT_ROOT}/local/deps/esp_tinyusb")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(atk_box_carplay)

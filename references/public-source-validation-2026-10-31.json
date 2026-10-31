@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-31",
+  "project": "marsCarplay-box",
+  "snapshot": "0.1.8-public-source",
+  "scope": "BOX local decode/display/touch only; web CarPlay applications excluded",
+  "host_checks": {
+    "result": "passed on macOS/Clang with ASan+UBSan",
+    "private_sample_required": false,
+    "bit_extraction_cases": 1434048,
+    "pixel_equivalence_cases": 177,
+    "includes": [
+      "queue/config deduplication",
+      "touch mapping",
+      "timing/profile",
+      "collection activity windows"
+    ]
+  },
+  "public_dependency_fetch": "passed from pinned GitHub archives without authentication assets",
+  "firmware_build": "passed, ESP32-S3 / ESP-IDF6.1",
+  "firmware_inspection": {
+    "firmware": "0.1.8-public-source",
+    "target": "ATK-DNESP32S3-BOX",
+    "native_display": [
+      320,
+      240
+    ],
+    "advertised_video": [
+      320,
+      192
+    ],
+    "advertised_max_fps": 8,
+    "usb_interfaces": [
+      [
+        0,
+        0,
+        2,
+        255,
+        240,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        2,
+        13,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        10,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        2,
+        10,
+        0,
+        1
+      ]
+    ],
+    "usb_endpoints": [
+      1,
+      129,
+      130,
+      131,
+      3
+    ],
+    "usb_max_power_ma": 500,
+    "local_decoder_linked": true,
+    "psram_config_mhz": 80,
+    "cpu_config_mhz": 240,
+    "bytes": 1199408,
+    "sha256": "a6a0315fb1b1238cf525ae109333c5e29ec0552390a81a8f26f691b9b1121310"
+  },
+  "authentication_default": "unsupported identity-free stub",
+  "external_provider_source": "none",
+  "embedded_auth_asset_symbols": 0,
+  "publication_guard_rejects": [
+    "HTML/browser application fixture",
+    "PEM private-key marker fixture"
+  ],
+  "flashed": false,
+  "real_iphone_acceptance_for_public_stub": false,
+  "ci_status": "workflow provided; remote run pending publication",
+  "original_worktree_firmware_changed": false
+}

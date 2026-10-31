@@ -1,0 +1,5 @@
+menu "USB iAP2 probe"
+config PROBE_AP_PASSWORD
+    string "Debug hotspot password"
+    default ""
+endmenu

@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-26",
+  "firmware": "0.1.2-atk-psram80",
+  "psram_config_mhz": 80,
+  "cpu_config_mhz": 240,
+  "source": {
+    "width": 800,
+    "height": 480,
+    "profile": "High",
+    "entropy": "CABAC",
+    "reference_frames": 4,
+    "sha256": "34013f07a777fdafb2b928211233e1e14d25416a89e9aa7bf6c79206fe0fcf86"
+  },
+  "scope": "Mac encrypted sender over USB NCM -> physical ESP32-S3 decoder -> LCD successful submissions. No iPhone/iAP2/MFi or visual acceptance in this test.",
+  "runs": [
+    {
+      "run": "20261026-run-4-paced30",
+      "target_send_fps": 30.0,
+      "sent_frames": 662,
+      "send_seconds": 30.0016,
+      "actual_send_fps": 22.0655,
+      "drain_seconds": 3,
+      "observed_seconds": 33.0125,
+      "counts_delta": {
+        "decoded": 15,
+        "shown": 15,
+        "gaps": 15,
+        "errors": 0,
+        "decoder_resets": 16,
+        "skipped_waiting_idr": 492,
+        "received": 662
+      },
+      "display_fps_over_send_and_drain": 0.4544,
+      "interval_wall_time_avg_ms_approx": {
+        "decode": 1309.29,
+        "process": 1376.39,
+        "convert": 49.81,
+        "present": 16.82
+      },
+      "final_waiting_idr": true,
+      "force_keyframe_requests": 17,
+      "all_control_responses_200": true,
+      "sampling_errors": []
+    },
+    {
+      "run": "20261026-run-5-paced1",
+      "target_send_fps": 1.0,
+      "sent_frames": 20,
+      "send_seconds": 20.0021,
+      "actual_send_fps": 0.9999,
+      "drain_seconds": 3,
+      "observed_seconds": 23.0051,
+      "counts_delta": {
+        "decoded": 20,
+        "shown": 20,
+        "gaps": 0,
+        "errors": 0,
+        "decoder_resets": 1,
+        "skipped_waiting_idr": 0,
+        "received": 20
+      },
+      "display_fps_over_send_and_drain": 0.8694,
+      "interval_wall_time_avg_ms_approx": {
+        "decode": 518.48,
+        "process": 557.87,
+        "convert": 23.3,
+        "present": 15.89
+      },
+      "final_waiting_idr": false,
+      "force_keyframe_requests": 1,
+      "all_control_responses_200": true,
+      "sampling_errors": []
+    }
+  ],
+  "timing_note": "Interval means reconstructed from differences of rounded boot-cumulative means times attempt counts, so approximate. Decode excludes display callback but includes parsing, scheduler/yields; not pure CPU time. Display FPS denominator includes the 3 second drain. evicted is NOT counted as frame loss."
+}

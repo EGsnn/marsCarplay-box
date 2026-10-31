@@ -1,0 +1,101 @@
+{
+  "firmware": "0.1.5-atk-profile",
+  "samples": 27,
+  "valid_interval_seconds": 29.1,
+  "invalid_or_reset_intervals": 0,
+  "totals": {
+    "received": 775,
+    "decoded": 140,
+    "shown": 140,
+    "gaps": 14,
+    "errors": 0,
+    "decoder_resets": 14,
+    "skipped_waiting_idr": 591
+  },
+  "interval_fps": {
+    "received": 26.633,
+    "decoded": 4.811,
+    "displayed": 4.811
+  },
+  "last_boot_cumulative_timing": {
+    "window_ms": 1000.27,
+    "sampled_uptime_ms": 69415.71,
+    "rx_fps": 23.99,
+    "decode_fps": 7.0,
+    "display_fps": 7.0,
+    "decode_attempts": 178,
+    "output_attempts": 178,
+    "decode_avg_ms": 114.41,
+    "decode_max_ms": 216.94,
+    "process_avg_ms": 153.94,
+    "process_max_ms": 253.44,
+    "convert_avg_ms": 23.06,
+    "convert_max_ms": 60.46,
+    "present_avg_ms": 16.32,
+    "present_max_ms": 25.61
+  },
+  "last_boot_decode_profile": {
+    "sample_every": 32,
+    "samples": 6,
+    "idr_samples": 1,
+    "p_samples": 5,
+    "decode_avg_ms": 126.984,
+    "decode_max_ms": 184.672,
+    "timer_reads": 297344,
+    "stage_avg_ms": {
+      "other": 58.328,
+      "cabac_bins": 18.087,
+      "intra_prediction": 1.733,
+      "motion_compensation": 11.773,
+      "inverse_transform": 16.881,
+      "deblock": 20.181
+    }
+  },
+  "video_config": {
+    "bytes": 31,
+    "sha256": "18fa7b2fae1a3b6650f863617905187b2641f9f5ac94b217619a2da6aaa8a9d4",
+    "sps": [
+      {
+        "id": 0,
+        "profile_idc": 100,
+        "constraints": 0,
+        "level_idc": 31,
+        "chroma_format_idc": 1,
+        "bit_depth_luma": 8,
+        "max_num_ref_frames": 4,
+        "log2_max_frame_num": 12,
+        "pic_order_cnt_type": 0,
+        "frame_mbs_only_flag": 1,
+        "coded_width": 320,
+        "coded_height": 192,
+        "crop_offsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "width": 320,
+        "height": 192
+      }
+    ],
+    "pps": [
+      {
+        "id": 0,
+        "sps_id": 0,
+        "entropy_coding_mode_flag": 1,
+        "bottom_field_pic_order_in_frame_present_flag": 0,
+        "num_slice_groups": 1
+      }
+    ]
+  },
+  "date": "2026-10-27",
+  "peer": "real iPhone USB to BOX; Mac diagnostic reads only",
+  "read_failure_count": 1,
+  "interval_timing_avg_ms_approx": {
+    "decode": 120.3,
+    "process": 160.06,
+    "convert": 23.24,
+    "present": 16.36
+  },
+  "note": "One diagnostic HTTP timeout; no counter rollback observed. Six boot-cumulative sampled frames include instrumentation and scheduling overhead; raw profiles do not isolate whole CABAC context/syntax cost. Different input/content than 0.1.4, not a controlled speed ratio."
+}

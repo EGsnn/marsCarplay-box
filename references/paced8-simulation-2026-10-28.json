@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-28",
+  "firmware": "0.1.7-atk-paced8",
+  "test": "BOX receives fixed local High/CABAC sample from encrypted Mac test peer, paced8FPS; not an iPhone negotiation test",
+  "sample_sha256": "a494f5112b11aa9f314497890086c866373849f30c0d20862b391a46620e27ca",
+  "sent_frames": 100,
+  "actual_sent_fps": 7.99933522861317,
+  "sent_configs": 10,
+  "requested_video": [
+    320,
+    192
+  ],
+  "requested_max_fps": 8,
+  "decoded": 100,
+  "shown": 100,
+  "gaps": 0,
+  "errors": 0,
+  "decoder_resets": 1,
+  "queue": {
+    "ready": true,
+    "epoch": 2,
+    "sequence": 100,
+    "frames": 100,
+    "queued": 32,
+    "bytes": 2801,
+    "evicted": 68,
+    "oversize": 0,
+    "max_payload": 196608,
+    "config_changes": 1,
+    "config_duplicates": 9,
+    "config_clears": 1
+  },
+  "performance": {
+    "window_ms": 1004.92,
+    "sampled_uptime_ms": 223360.7,
+    "rx_fps": 0.0,
+    "decode_fps": 0.0,
+    "display_fps": 0.0,
+    "decode_attempts": 100,
+    "output_attempts": 100,
+    "decode_avg_ms": 42.34,
+    "decode_max_ms": 188.36,
+    "process_avg_ms": 78.14,
+    "process_max_ms": 223.73,
+    "convert_avg_ms": 19.6,
+    "convert_max_ms": 43.37,
+    "present_avg_ms": 16.09,
+    "present_max_ms": 19.89
+  },
+  "decode_profile": {
+    "sample_every": 32,
+    "samples": 4,
+    "idr_samples": 1,
+    "p_samples": 3,
+    "decode_avg_ms": 43.793,
+    "decode_max_ms": 91.87,
+    "timer_reads": 107986,
+    "stage_avg_ms": {
+      "other": 22.41,
+      "cabac_bins": 4.115,
+      "intra_prediction": 0.859,
+      "motion_compensation": 6.04,
+      "inverse_transform": 7.642,
+      "deblock": 2.726
+    }
+  },
+  "real_iphone_max_fps_accepted": "pending",
+  "limitations": "Different sender pacing than the 0.1.6 ten-FPS comparison; no new decoder speedup claimed. LCD submission is not visual acceptance."
+}

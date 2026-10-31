@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "firmware": "0.1.4-atk-steady",
+  "peer": "real iPhone USB to BOX; Mac diagnostic reads only",
+  "valid_interval_seconds": 29.09,
+  "samples": 30,
+  "invalid_or_reset_intervals": 0,
+  "counts_delta": {
+    "received": 714,
+    "decoded": 176,
+    "shown": 176,
+    "gaps": 13,
+    "errors": 0,
+    "decoder_resets": 13,
+    "skipped_waiting_idr": 481
+  },
+  "interval_fps": {
+    "received": 24.544,
+    "decoded": 6.05,
+    "displayed": 6.05
+  },
+  "interval_timing_avg_ms_approx": {
+    "decode": 102.37,
+    "process": 141.12,
+    "convert": 22.18,
+    "present": 16.35
+  },
+  "queue_delta": {
+    "config_changes": 0,
+    "config_duplicates": 28,
+    "config_clears": 0,
+    "epoch": 0,
+    "oversize": 0
+  },
+  "sps_pps": {
+    "bytes": 31,
+    "sha256": "18fa7b2fae1a3b6650f863617905187b2641f9f5ac94b217619a2da6aaa8a9d4",
+    "sps": [
+      {
+        "id": 0,
+        "profile_idc": 100,
+        "constraints": 0,
+        "level_idc": 31,
+        "chroma_format_idc": 1,
+        "bit_depth_luma": 8,
+        "max_num_ref_frames": 4,
+        "log2_max_frame_num": 12,
+        "pic_order_cnt_type": 0,
+        "frame_mbs_only_flag": 1,
+        "coded_width": 320,
+        "coded_height": 192,
+        "crop_offsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "width": 320,
+        "height": 192
+      }
+    ],
+    "pps": [
+      {
+        "id": 0,
+        "sps_id": 0,
+        "entropy_coding_mode_flag": 1,
+        "bottom_field_pic_order_in_frame_present_flag": 0,
+        "num_slice_groups": 1
+      }
+    ]
+  },
+  "note": "Timing reconstructed from rounded cumulative means and attempts; wall time, not pure CPU or end-to-end latency. 0.1.3 and 0.1.4 captures have different input rates/content; their FPS ratio is not a controlled speedup benchmark."
+}

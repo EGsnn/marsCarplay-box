@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-26",
+  "firmware": "0.1.3-atk-lowres",
+  "scope": "Physical BOX decoding offline Mac-transcoded 320x192 samples via encrypted simulated peer. NOT iPhone acceptance, NOT runtime relay, NOT official esp_h264 decoder.",
+  "runs": [
+    {
+      "run": "20261026-lowres-high10",
+      "target_send_fps": 10.0,
+      "actual_send_fps": 10.0,
+      "sent_frames": 100,
+      "send_seconds": 10.0,
+      "observed_seconds": 13.004,
+      "drain_seconds": 3,
+      "counts_delta": {
+        "decoded": 100,
+        "shown": 100,
+        "gaps": 0,
+        "errors": 0,
+        "decoder_resets": 1,
+        "skipped_waiting_idr": 0,
+        "received": 100
+      },
+      "display_fps_including_drain": 7.69,
+      "interval_wall_time_avg_ms_approx": {
+        "decode": 46.31,
+        "process": 84.19,
+        "convert": 21.68,
+        "present": 16.08
+      },
+      "final_waiting_idr": false,
+      "all_control_responses_200": true,
+      "sampling_errors": []
+    },
+    {
+      "run": "20261026-lowres-baseline10",
+      "target_send_fps": 10.0,
+      "actual_send_fps": 10.0,
+      "sent_frames": 100,
+      "send_seconds": 10.0,
+      "observed_seconds": 13.006,
+      "drain_seconds": 3,
+      "counts_delta": {
+        "decoded": 100,
+        "shown": 100,
+        "gaps": 0,
+        "errors": 0,
+        "decoder_resets": 1,
+        "skipped_waiting_idr": 0,
+        "received": 100
+      },
+      "display_fps_including_drain": 7.689,
+      "interval_wall_time_avg_ms_approx": {
+        "decode": 42.11,
+        "process": 79.99,
+        "convert": 21.64,
+        "present": 16.16
+      },
+      "final_waiting_idr": false,
+      "all_control_responses_200": true,
+      "sampling_errors": []
+    },
+    {
+      "run": "20261026-lowres-high30",
+      "target_send_fps": 30.0,
+      "actual_send_fps": 29.995,
+      "sent_frames": 300,
+      "send_seconds": 10.002,
+      "observed_seconds": 13.005,
+      "drain_seconds": 3,
+      "counts_delta": {
+        "decoded": 72,
+        "shown": 72,
+        "gaps": 5,
+        "errors": 0,
+        "decoder_resets": 6,
+        "skipped_waiting_idr": 212,
+        "received": 300
+      },
+      "display_fps_including_drain": 5.536,
+      "interval_wall_time_avg_ms_approx": {
+        "decode": 63.1,
+        "process": 103.32,
+        "convert": 23.96,
+        "present": 16.16
+      },
+      "final_waiting_idr": true,
+      "all_control_responses_200": true,
+      "sampling_errors": []
+    }
+  ],
+  "note": "Timing reconstructed from differences of rounded boot-cumulative means times counts; wall time includes scheduling/yields. Denominator for display FPS includes 3 second drain. Samples use same source content but profile/reference/encoding parameters differ; timing change cannot be attributed solely to CABAC.",
+  "sample_metadata": {
+    "high": {
+      "bytes": 35,
+      "sha256": "7cb748781427dfc6981e4ba59164757335967d1467dd2e72270c054605d40ae6",
+      "sps": [
+        {
+          "id": 0,
+          "profile_idc": 100,
+          "constraints": 0,
+          "level_idc": 13,
+          "chroma_format_idc": 1,
+          "bit_depth_luma": 8,
+          "max_num_ref_frames": 4,
+          "log2_max_frame_num": 4,
+          "pic_order_cnt_type": 2,
+          "frame_mbs_only_flag": 1,
+          "coded_width": 320,
+          "coded_height": 192,
+          "crop_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "width": 320,
+          "height": 192
+        }
+      ],
+      "pps": [
+        {
+          "id": 0,
+          "sps_id": 0,
+          "entropy_coding_mode_flag": 1,
+          "bottom_field_pic_order_in_frame_present_flag": 0,
+          "num_slice_groups": 1
+        }
+      ]
+    },
+    "baseline": {
+      "bytes": 33,
+      "sha256": "0d3b809b57e510c4be8a53b18d0ecdfadab3e12d15b6a4bcf1b287cc1bc50bce",
+      "sps": [
+        {
+          "id": 0,
+          "profile_idc": 66,
+          "constraints": 192,
+          "level_idc": 13,
+          "chroma_format_idc": 1,
+          "bit_depth_luma": 8,
+          "max_num_ref_frames": 1,
+          "log2_max_frame_num": 4,
+          "pic_order_cnt_type": 2,
+          "frame_mbs_only_flag": 1,
+          "coded_width": 320,
+          "coded_height": 192,
+          "crop_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "width": 320,
+          "height": 192
+        }
+      ],
+      "pps": [
+        {
+          "id": 0,
+          "sps_id": 0,
+          "entropy_coding_mode_flag": 0,
+          "bottom_field_pic_order_in_frame_present_flag": 0,
+          "num_slice_groups": 1
+        }
+      ]
+    }
+  }
+}

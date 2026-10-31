@@ -1,0 +1,9 @@
+{
+  "esp_usb": "68bf7f9613dbb1a31094fdb903209ae3e4bf388d",
+  "tinyusb": "894ea01409e0407a7dbe0ee29b2d58a4691f9046",
+  "iap2_core": "6ab9eb9d46b8f91ee7cc5574e5b2b4693405e71c",
+  "auth_components": "6ab9eb9d46b8f91ee7cc5574e5b2b4693405e71c",
+  "airplay_capture_components": "6ab9eb9d46b8f91ee7cc5574e5b2b4693405e71c",
+  "ed25519_original": "b1f19fab4aebe607805620d25a5e42566ce46a0e",
+  "esp_idf": "fff9895c82d744c7237be8847347bdd1b07c6643"
+}

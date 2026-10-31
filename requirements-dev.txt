@@ -1,0 +1,3 @@
+# Optional encrypted test peer / ELF inspection; not needed for core host checks.
+cryptography>=44,<49
+pyelftools>=0.31,<0.33

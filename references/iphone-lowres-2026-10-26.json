@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-26",
+  "firmware": "0.1.3-atk-lowres",
+  "peer": "real iPhone USB -> BOX on-board decode/display; Mac diagnostic reads only",
+  "requested_size": [
+    320,
+    192
+  ],
+  "actual_sizes_during_sampling": [
+    [
+      320,
+      192
+    ]
+  ],
+  "iphone_lowres_observed": true,
+  "baseline_observed": false,
+  "valid_interval_seconds": 29.07,
+  "samples": 30,
+  "invalid_or_reset_intervals": 0,
+  "counts_delta": {
+    "received": 572,
+    "decoded": 156,
+    "shown": 157,
+    "gaps": 11,
+    "errors": 0,
+    "decoder_resets": 33,
+    "skipped_waiting_idr": 138
+  },
+  "interval_fps": {
+    "received": 19.676,
+    "decoded": 5.366,
+    "displayed": 5.401
+  },
+  "interval_timing_avg_ms_approx": {
+    "decode": 126.78,
+    "process": 168.31,
+    "convert": 24.55,
+    "present": 16.42
+  },
+  "sps_pps": {
+    "bytes": 31,
+    "sha256": "18fa7b2fae1a3b6650f863617905187b2641f9f5ac94b217619a2da6aaa8a9d4",
+    "sps": [
+      {
+        "id": 0,
+        "profile_idc": 100,
+        "constraints": 0,
+        "level_idc": 31,
+        "chroma_format_idc": 1,
+        "bit_depth_luma": 8,
+        "max_num_ref_frames": 4,
+        "log2_max_frame_num": 12,
+        "pic_order_cnt_type": 0,
+        "frame_mbs_only_flag": 1,
+        "coded_width": 320,
+        "coded_height": 192,
+        "crop_offsets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "width": 320,
+        "height": 192
+      }
+    ],
+    "pps": [
+      {
+        "id": 0,
+        "sps_id": 0,
+        "entropy_coding_mode_flag": 1,
+        "bottom_field_pic_order_in_frame_present_flag": 0,
+        "num_slice_groups": 1
+      }
+    ]
+  },
+  "config_packets_delta": 22,
+  "idr_packets_delta": 11,
+  "queue_epoch_delta": 22,
+  "timing_note": "Means reconstructed from rounded boot-cumulative timing and attempt counts; wall time, not pure CPU or end-to-end latency. Snapshot boundary can include a decode callback in flight, causing a one-frame difference between decoded and shown deltas. Config bytes not recorded individually; exact duplicate count is not established by this capture."
+}
